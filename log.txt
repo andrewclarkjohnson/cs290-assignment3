@@ -1,1 +1,10 @@
-You log goes in this  file.
+Assignment 3 Log
+Start: Wed, 22 April 2015 13:00:00 
+End: Wed, 22 April 2015 16:00:00 
+Tasks: Understand the task; cloned the cs290osu github repository to my machine; added cs290osu as collaborator;  got half of functions on variables.js and functions.js to pass tests
+
+
+Start: Thurs, 23 April 2015 09:10:00 
+End: Thurs, 23 April 2015 11:55:00 
+Tasks: Had to figure out why code passing test yesterday not working today; tried javascript lint sites to help; re-downloaded blank functions.js code and began copy/pasting bits of yesterdays code into it - things started working :) Apparently something I added late in yesteray's code broke earlier stuff - very frustrating! @10:42 finally code first new bit of code to work today - parseGit; after lots more reading finally getting the idea of what is expected for MessageLog; got constructor to work with empty methods. Need a break.
+

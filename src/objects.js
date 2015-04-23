@@ -10,7 +10,7 @@
 
 function returnObjectLiteral() {
   //your code here
-  return undefined; //Modify ONLY this line
+  return { type: 'Goldfish', brand: 'Pepperidge Farm', flavor: 'Cheddar', count: 2000 };//Modify ONLY this line
   //end your code
 }
 
@@ -38,6 +38,40 @@ function returnObjectLiteral() {
 */
 
 //your code here
+function logMessage (messageText, number) {
+	var numExistingMessages;
+	if (number == 0) // user sent
+	{
+		numExistingMessages = this.sentMessages.length;
+		//if (numExistingMessages)
+	}
+};
+
+function getSentMessage (n) {
+
+};
+
+
+function totalSent () {
+
+};
+
+function totalReceived () {
+
+};
+
+
+function MessageLog(user) {
+  this.user = user;
+  this.sentMessages = []; // sets a new array of sent messages (does this work????)
+  this.receivedMessages = [];// sets a new array of received messages (does this work????)
+  this.logMessage = logMessage;
+  this.getSentMessage = getSentMessage;
+  this.totalSent = totalSent;
+  this.totalReceived = totalReceived;
+ 
+}
+
 
 //end your code
 
@@ -48,6 +82,17 @@ function returnObjectLiteral() {
 */
 //your code here
 
+MessageLog.prototype.lastReceivedMessage = function() {
+	if (this.receivedMessages.length > 0)
+	{
+		return (receivedMessages[0]);
+	}
+	else
+	{
+		return ("No messages received yet.");
+	}
+};
+
 //end your code
 
 /**
@@ -57,5 +102,5 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+BlackHatGuy = new MessageLog ("BlackHatGuy");
 //end your code

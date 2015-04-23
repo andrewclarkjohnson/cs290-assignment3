@@ -5,6 +5,7 @@
 * \@return is the value that should be returned
 */
 
+
 /**
 * Write a function called `uselessFunction`.
 * It should accept no arguments.
@@ -14,7 +15,7 @@
 
 //your code here
 function uselessFunction () {
-  return null;
+  return;
 } 
 //end your code
 
@@ -34,7 +35,7 @@ var barType = typeof bar;
 //your code here
 var bar = function (doubleArray) {
 	var i;
-	
+	/*
 	for (i=0; i<doubleArray.length;i++)
 	{
 	
@@ -46,7 +47,7 @@ var bar = function (doubleArray) {
 		doubleArray[i] = doubleArray[i] * 2;
 		
 	}
-	
+	*/
 	return (true);
 
 };
@@ -63,7 +64,6 @@ function GitLog(hash, date, message) {
     this.hash = hash;
     this.date = date;
     this.message = message;
-    //alert(message);
 }
 
 /**
@@ -87,30 +87,17 @@ function GitLog(hash, date, message) {
 
 //your code here
 function parseGit(logArray) {
-     var i, hash, date, message, parsedData, outputArray;
-     
-     //alert(logArray.length);
-     //alert(logArray[0]);
-     for (i=0; i<logArray.length;i++)
-     {
-     	//alert(i);
-       parsedData = logArray[i].split(" ");
-       //alert(parsedData[0]);
-       hash = String(parsedData[0]);
-       
-       //alert(hash);
-		date = parsedData[1] + " " + parsedData[2] + " " + parsedData[3] + " " + parsedData[4] + " " + parsedData[5] + " " + parsedData[6]  ; 
-		//alert (date);
-		date = new Date(date);
-		//alert (date);
-		parsedData = logArray[i].split(" \"");
-		parsedData = parsedData[1].split("\"");
-
-		message = parsedData[0]; 
-		//var newLog = 
-		logArray[i]=new GitLog(hash, date, message);
-		//alert(outputArray[i]);
+	var i;
+	let hash, date, message;
+	for (i=0; i<logArray.length;i++)
+	{
+		let parsedData = logArray[i].split(" ");
+		hash = parsedData[0];
+		date = parsedData[1] + parsedData[2] + parsedData[3] + parsedData[4] + parsedData[5] + parsedData[6];
+		message = parsedData[7]; 
+		logArray[i]=GitLog(hash, date, message);
 	}
 
 	return (logArray);
 }
+//end your code
