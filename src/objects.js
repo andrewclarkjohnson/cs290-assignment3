@@ -39,25 +39,60 @@ function returnObjectLiteral() {
 
 //your code here
 function logMessage (messageText, number) {
-	var numExistingMessages;
-	if (number == 0) // user sent
+	var numExistingMessages, i;
+
+	if (number === 0) // user sent
 	{
+		//console.log ("sent");
 		numExistingMessages = this.sentMessages.length;
-		//if (numExistingMessages)
+		if (numExistingMessages>5) 
+		{
+			numExistingMessages=5;
+		}
+		for (i=(numExistingMessages); i>=1; --i)
+		{
+			this.sentMessages[i]=this.sentMessages[i-1];
+		}
+		this.sentMessages[0] = messageText;
+		//this.totalSent +=1;
 	}
-};
+	else if (number === 1) // user received
+	{
+		console.log ("received");
+		console.log (this.receivedMessages.length);
+		numExistingMessages = this.receivedMessages.length;
+		if(numExistingMessages>0) 
+		{
+			if (numExistingMessages>5) 
+			{
+				numExistingMessages=5;
+			}
+			for (i=(numExistingMessages); i>=1; --i)
+			{
+				this.receivedMessages[i]=this.receivedMessages[i-1];
+				console.log(i);
+			}
+		}
+		
+		this.receivedMessages[0] = messageText;
+		console.log (this.receivedMessages.length);
+		//this.totalReceived +=1;
+	}
+};	
 
 function getSentMessage (n) {
-
+	return this.sentMessages[n];
 };
 
 
 function totalSent () {
-
+	return this.sentMessages.length;
 };
 
-function totalReceived () {
 
+function totalReceived () {
+	console.log("totalReceived");
+	return this.receivedMessages.length;
 };
 
 
@@ -67,8 +102,8 @@ function MessageLog(user) {
   this.receivedMessages = [];// sets a new array of received messages (does this work????)
   this.logMessage = logMessage;
   this.getSentMessage = getSentMessage;
-  this.totalSent = totalSent;
-  this.totalReceived = totalReceived;
+  this.totalSent =  totalSent;
+  this.totalReceived =  totalReceived;
  
 }
 
@@ -85,12 +120,13 @@ function MessageLog(user) {
 MessageLog.prototype.lastReceivedMessage = function() {
 	if (this.receivedMessages.length > 0)
 	{
-		return (receivedMessages[0]);
+		return (this.receivedMessages[0]);
 	}
 	else
 	{
 		return ("No messages received yet.");
 	}
+	return null; // should never get here
 };
 
 //end your code
@@ -102,5 +138,14 @@ MessageLog.prototype.lastReceivedMessage = function() {
 */
 
 //your code here
-BlackHatGuy = new MessageLog ("BlackHatGuy");
+var myLog = new MessageLog ("BlackHatGuy");
+console.log(myLog.user);
+myLog.logMessage("foo",1);
+console.log("foo finished");
+
+myLog.logMessage("bar",1);
+console.log("bar finished");
+myLog.logMessage("baz",1);
+
+console.log("baz finished");
 //end your code

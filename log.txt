@@ -8,3 +8,12 @@ Start: Thurs, 23 April 2015 09:10:00
 End: Thurs, 23 April 2015 11:55:00 
 Tasks: Had to figure out why code passing test yesterday not working today; tried javascript lint sites to help; re-downloaded blank functions.js code and began copy/pasting bits of yesterdays code into it - things started working :) Apparently something I added late in yesteray's code broke earlier stuff - very frustrating! @10:42 finally code first new bit of code to work today - parseGit; after lots more reading finally getting the idea of what is expected for MessageLog; got constructor to work with empty methods. Need a break.
 
+Start: Fri, 24 April 2015 06:40:00 
+End: Fri, 24 April 2015 07:10:00 
+Tasks: able to fix a few problems with MessageLog functionality; passes 33 of 36 assertions now. 
+
+
+
+Start: Fri, 24 April 2015 08:05:00 
+End: Fri, 24 April 2015 08:30:00 
+Tasks: Complete! Had a problem with my for loop so the array wasn't being processed properly. All tests passed. Commented out my console.log lines used for debugging
