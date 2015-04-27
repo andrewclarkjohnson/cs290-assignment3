@@ -8,12 +8,47 @@ Start: Thurs, 23 April 2015 09:10:00
 End: Thurs, 23 April 2015 11:55:00 
 Tasks: Had to figure out why code passing test yesterday not working today; tried javascript lint sites to help; re-downloaded blank functions.js code and began copy/pasting bits of yesterdays code into it - things started working :) Apparently something I added late in yesteray's code broke earlier stuff - very frustrating! @10:42 finally code first new bit of code to work today - parseGit; after lots more reading finally getting the idea of what is expected for MessageLog; got constructor to work with empty methods. Need a break.
 
+
+Start: Thurs, 23 April 2015 14:00:00 
+End: Thurs, 23 April 2015 16:45:00 
+Tasks: Read and watched instructional content for week 4
+
 Start: Fri, 24 April 2015 06:40:00 
 End: Fri, 24 April 2015 07:10:00 
 Tasks: able to fix a few problems with MessageLog functionality; passes 33 of 36 assertions now. 
 
 
-
 Start: Fri, 24 April 2015 08:05:00 
 End: Fri, 24 April 2015 08:30:00 
 Tasks: Complete! Had a problem with my for loop so the array wasn't being processed properly. All tests passed. Commented out my console.log lines used for debugging
+
+Start: Fri, 24 April 2015 08:50:00 
+End: Fri, 24 April 2015 10:25:00 
+Tasks: Read description of Part 2; extremely confused; read Piazza forums a lot and found everyone in class is confused
+
+Start: Fri, 24 April 2015 15:00:00 
+End: Fri, 24 April 2015 17:45:00 
+Tasks: Made shelf of html page; after lots of trial and error finally able to get JSON reading properly but haven't figured out how to get the language item out; surpassed hourly limit so github won't let me access any more right now. 
+
+Start: Fri, 24 April 2015 05:50:00 
+End: Fri, 24 April 2015 11:45:00 
+Tasks: Got more working; as soon as I finally figure out one part and think I can do this, the next part seems next to impossible; most of the morning has been painfully frustrating and I wish it wasn't too late to drop the course; haven't been able to get 150 items per page; the search box will not work. Seems to reload the page each time
+
+
+Start: Fri, 24 April 2015 12:40:00 
+End: Fri, 24 April 2015 16:00:00 
+Tasks: converted the desciptions to links finally but haven't been able to save them in favorites div
+
+
+Start: Sat, 25 April 2015 07:40:00
+End: Sat, 25 April 2015 09:50:00
+Tasks: Got local storage to work for one item; stupid little items keep making this harder than it needs to be
+
+Start: Sat, 25 April 2015 011:10:00
+End: Sat, 25 April 2015 14:50:00
+Tasks: Very little progress, most of the day spentadding the buttons to save to favorite divs but everytime I click on it it only shows the last item in the list; basically nothing accomplished this session. Arg!!!
+
+tart: Sat, 25 April 2015 06:40:00
+End: Sat, 25 April 2015 12:00:00
+Tasks: Figured out how to save to favorites and add them to a list. Code is incredibly sloppy but semi-functional. Added remove buttons to favorites but am having trouble making them actually remove from the list
+
